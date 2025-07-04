@@ -8,6 +8,7 @@ The project uses the **AdventureWorks** dataset to simulate a real-world reporti
 ---
 
 🔧 Tools & Technologies
+
 Power BI Desktop
 
 Power Query (M Language)
@@ -37,6 +38,7 @@ Sales Breakdown by Product Line, Region, and Time
 
 ![image](https://github.com/user-attachments/assets/460f6edd-a30a-4ff9-a97f-1abe2e37e8ea)
 
+📊  [DashBoard Link](https://app.powerbi.com/view?r=eyJrIjoiNTM5ZDE3ZDAtMjk0MC00MjA5LTkyNDQtNGMwNGJiY2NkNGQzIiwidCI6ImM3OTkwYjAwLTgwNWUtNGU0OS1hZTg3LWVmY2Q2ZjBhMTc4OCJ9)
 
 🎯 Learning Outcomes:
 
