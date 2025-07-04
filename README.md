@@ -40,6 +40,9 @@ Sales Breakdown by Product Line, Region, and Time
 
 📊  [DashBoard Link](https://app.powerbi.com/view?r=eyJrIjoiNTM5ZDE3ZDAtMjk0MC00MjA5LTkyNDQtNGMwNGJiY2NkNGQzIiwidCI6ImM3OTkwYjAwLTgwNWUtNGU0OS1hZTg3LWVmY2Q2ZjBhMTc4OCJ9)
 
+---
+
+
 🎯 Learning Outcomes:
 
 Power BI workflow: from raw data to final insights
