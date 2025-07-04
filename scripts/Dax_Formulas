@@ -1,1 +1,1845 @@
+# 📐 Power BI Measures
+
+### 🔸 Price Adjustment (%) Value
+
+**Table**: `Price Adjustment (%)`
+
+**DAX Formula:**
+
+```DAX
+SELECTEDVALUE('Price Adjustment (%)'[Price Adjustment (%)], 0)
+```
+
+### 🔸 AVG retail price
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+AVERAGE(
+    'Product Lookup'[ProductPrice]
+)
+```
+
+### 🔸 AVG retail price
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+AVERAGE(
+    'Product Lookup'[ProductPrice]
+)
+```
+
+### 🔸 Revenue Target Gap with arrow
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+
+```
+
+### 🔸 Bike sales
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [QTY Sold],
+    'Product Categories Lookup'[CategoryName] = "Bikes"
+)
+```
+
+### 🔸 Previous Month Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH
+    )
+)
+```
+
+### 🔸 Previous Month Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH
+    )
+)
+```
+
+### 🔸 Revenue Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Revenue] * 1.1
+```
+
+### 🔸 Revenue Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Revenue] * 1.1
+```
+
+### 🔸 Revenue Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Revenue] * 1.1
+```
+
+### 🔸 Bike return rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [QTY Returned]/ [QTY Sold],
+    'Product Categories Lookup'[CategoryName] = "Bikes"
+)
+```
+
+### 🔸 test
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    'Customer Lookup'[Income Level] = "High"
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Total Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] * 
+    RELATED(
+        'Product Lookup'[ProductPrice]
+    )
+)
+```
+
+### 🔸 Adjusted Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity]
+    *
+    [Adjusted Price]
+)
+```
+
+### 🔸 Order Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Orders] * 1.1
+```
+
+### 🔸 Order Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Orders] * 1.1
+```
+
+### 🔸 Previous Month Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Profit],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH
+    )
+)
+```
+
+### 🔸 Total Cost
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] 
+    *
+    RELATED('Product Lookup'[ProductCost]
+    )
+)
+```
+
+### 🔸 Total Cost
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUMX(
+    'Sales Data',
+    'Sales Data'[OrderQuantity] 
+    *
+    RELATED('Product Lookup'[ProductCost]
+    )
+)
+```
+
+### 🔸 Bulk orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    'Sales Data'[OrderQuantity] > 1
+)
+```
+
+### 🔸 All Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    ALL(
+        'Sales Data'
+    ))
+```
+
+### 🔸 Full Name (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    MAX(
+        'Customer Lookup'[Full Name]
+    ),
+    "Multiple Customers"
+)
+```
+
+### 🔸 Full Name (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    MAX(
+        'Customer Lookup'[Full Name]
+    ),
+    "Multiple Customers"
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 Total Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+COUNT('Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 % of All returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DIVIDE(
+    [Total Returns],[all returns]
+)
+```
+
+### 🔸 Previous Month Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Calendar Lookup'[Date],
+    -1,
+    MONTH
+    )
+)
+```
+
+### 🔸 Previous Month Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Calendar Lookup'[Date],
+    -1,
+    MONTH
+    )
+)
+```
+
+### 🔸 Previous Month Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATEADD('Calendar Lookup'[Date],
+    -1,
+    MONTH
+    )
+)
+```
+
+### 🔸 QTY Sold
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUM(
+    'Sales Data'[OrderQuantity]
+)
+```
+
+### 🔸 QTY Sold
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUM(
+    'Sales Data'[OrderQuantity]
+)
+```
+
+### 🔸 QTY Sold
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+SUM(
+    'Sales Data'[OrderQuantity]
+)
+```
+
+### 🔸 Adjusted Price
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[AVG retail price] * (1 + 'Price Adjustment (%)'[Price Adjustment (%) Value])
+
+```
+
+### 🔸 all returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Returns],
+    ALL('Returns Data'
+    ))
+```
+
+### 🔸 Profit Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Profit] * 1.1
+```
+
+### 🔸 Profit Target
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Previous Month Profit] * 1.1
+```
+
+### 🔸 % of all orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DIVIDE(
+    [Total Orders], [All Orders]
+)
+    
+```
+
+### 🔸 10-month Rolling Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Calendar Lookup'[Date],
+        MAX(
+            'Calendar Lookup'[Date]
+        ),
+        -10,
+        MONTH
+    )
+)
+```
+
+### 🔸 Total Revenue (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    [Total Revenue],
+    "-"
+)
+```
+
+### 🔸 Total Revenue (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    [Total Revenue],
+    "-"
+)
+```
+
+### 🔸 Overall Average Price
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [AVG retail price],
+    ALL(
+        'Product Lookup'
+    ))
+```
+
+### 🔸 10-day Rolling Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATESINPERIOD(
+        'Calendar Lookup'[Date],
+        MAX(
+            'Calendar Lookup'[Date]
+        ),
+        -10,
+        DAY
+    )
+)
+```
+
+### 🔸 Total Orders (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    [Total Orders],
+    "-"
+)
+```
+
+### 🔸 Total Orders (Customer Detail)
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+IF(
+    HASONEVALUE(
+        'Customer Lookup'[CustomerKey]
+    ),
+    [Total Orders],
+    "-"
+)
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Total Cost]
+```
+
+### 🔸 Total Returns Bike
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Returns],
+    'Product Categories Lookup'[CategoryName] = "Bikes"
+)
+    
+```
+
+### 🔸 Returned Rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[QTY Returned]/[QTY Sold]
+```
+
+### 🔸 Returned Rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[QTY Returned]/[QTY Sold]
+```
+
+### 🔸 Returned Rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[QTY Returned]/[QTY Sold]
+```
+
+### 🔸 Returned Rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[QTY Returned]/[QTY Sold]
+```
+
+### 🔸 Returned Rate
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[QTY Returned]/[QTY Sold]
+```
+
+### 🔸 Total Customers
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[CustomerKey]
+    )
+```
+
+### 🔸 Total Customers
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[CustomerKey]
+    )
+```
+
+### 🔸 Total Customers
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[CustomerKey]
+    )
+```
+
+### 🔸 Total Customers
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[CustomerKey]
+    )
+```
+
+### 🔸 Average Revenue per Customer
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DIVIDE(
+    [Total Revenue],
+    [Total Customers]
+)
+```
+
+### 🔸 Average Revenue per Customer
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DIVIDE(
+    [Total Revenue],
+    [Total Customers]
+)
+```
+
+### 🔸 90-Day Rolling Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Profit],
+    DATESINPERIOD(
+        'Calendar Lookup'[Date],
+        MAX(
+            'Calendar Lookup'[Date]),
+            -90,
+            DAY
+    )
+)
+```
+
+### 🔸 Adjusted Profit
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+[Adjusted Revenue] - [Total Cost]
+```
+
+### 🔸 Previous Month Returns
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Returns],
+    DATEADD(
+        'Calendar Lookup'[Date],
+        -1,
+        MONTH
+    )
+)
+```
+
+### 🔸 Weekend Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders], 
+    'Calendar Lookup'[Weekend] = "Weekend"
+)
+```
+
+### 🔸 QTY Returned
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+sum(
+    'Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 QTY Returned
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+sum(
+    'Returns Data'[ReturnQuantity]
+)
+```
+
+### 🔸 High Ticket Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Orders],
+    FILTER(
+        'Product Lookup',
+        'Product Lookup'[ProductPrice]>[Overall Average Price]
+    )
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 Total Orders
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+DISTINCTCOUNT(
+    'Sales Data'[OrderNumber]
+)
+```
+
+### 🔸 YTD Revenue
+
+**Table**: `Measure Table`
+
+**DAX Formula:**
+
+```DAX
+
+CALCULATE(
+    [Total Revenue],
+    DATESYTD('Calendar Lookup'[Date]
+    )
+)
+```
+
+### 🔸 Order target Gap
+
+**Table**: `Calendar Lookup`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Orders] - [Order Target]
+```
+
+### 🔸 Revenue target Gap
+
+**Table**: `Calendar Lookup`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Revenue Target]
+```
+
+### 🔸 Revenue target Gap
+
+**Table**: `Calendar Lookup`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Revenue] - [Revenue Target]
+```
+
+### 🔸 Profit target Gap
+
+**Table**: `Calendar Lookup`
+
+**DAX Formula:**
+
+```DAX
+
+[Total Profit] - [Profit Target]
+```
 
