@@ -7,21 +7,6 @@ The project uses the **AdventureWorks** dataset to simulate a real-world reporti
 
 ---
 
-## 📁 Project Structure
-
-```text
-AdventureWorks/
-│
-├── PowerBI_Dashboard.pbix        # Final Power BI report file
-├── Data/
-│   └── AdventureWorks.xlsx       # Original dataset used for the project
-├── Screenshots/
-│   └── dashboard_overview.png    # Preview of the final report
-├── docs/
-│   └── data_model.drawio         # ER diagram / Data model
-└── README.md                     # Project documentation (you are here)
-
-
 🔧 Tools & Technologies
 Power BI Desktop
 
@@ -50,9 +35,11 @@ Profit Margin
 
 Sales Breakdown by Product Line, Region, and Time
 
-📸 Dashboard Preview
+![image](https://github.com/user-attachments/assets/460f6edd-a30a-4ff9-a97f-1abe2e37e8ea)
 
-🎯 Learning Outcomes
+
+🎯 Learning Outcomes:
+
 Power BI workflow: from raw data to final insights
 
 Best practices in data modeling
