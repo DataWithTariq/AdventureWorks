@@ -1,4 +1,4 @@
-# 📊 AdventureWorks - Power BI Reporting Project
+ # 📊 AdventureWorks - Power BI Reporting Project
 
 This is a complete end-to-end Business Intelligence project built as part of the Udemy course:  
 **[Microsoft Power BI - Up & Running With Power BI Desktop](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/?couponCode=ST4MT20725G1)**
@@ -17,6 +17,7 @@ DAX (Data Analysis Expressions)
 
 Microsoft Excel (AdventureWorks dataset)
 
+---
 🚀 Features Implemented
 ✅ Data extraction & transformation with Power Query
 ✅ Relational data modeling (star schema)
@@ -55,8 +56,12 @@ Designing interactive and user-friendly dashboards
 
 Applying business logic to real-world datasets
 
+---
+
 📥 Dataset Source
 AdventureWorks sample data from  [Maven Analytics](https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/?couponCode=ST4MT20725G1)
+
+---
 
 📌 Author
 Tariq Ladidji
