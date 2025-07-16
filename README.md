@@ -31,7 +31,7 @@ Total Sales
 
 Total Orders
 
-Average Order Value
+Return Rate
 
 Profit Margin
 
